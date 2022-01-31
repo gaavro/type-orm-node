@@ -1,5 +1,5 @@
 import { getCustomRepository } from "typeorm";
-import UserRepository from "../repositories/user.repositoty";
+import UserRepository from "../repositories/user.repository";
 
 interface UserBody {
   email?: string;

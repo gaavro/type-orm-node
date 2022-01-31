@@ -1,7 +1,7 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { getCustomRepository } from "typeorm";
-import UserRepository from "../repositories/user.repositoty";
+import UserRepository from "../repositories/user.repository";
 
 export const authenticateUser = async (email: string, password: string) => {
   const userRepository = getCustomRepository(UserRepository);

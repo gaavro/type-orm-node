@@ -1,6 +1,6 @@
 import { Response, NextFunction } from "express";
 import { getCustomRepository } from "typeorm";
-import UserRepository from "../repositories/user.repositoty";
+import UserRepository from "../repositories/user.repository";
 
 export const isAdmin = async (req: any, res: Response, next: NextFunction) => {
   const userRepository = getCustomRepository(UserRepository);

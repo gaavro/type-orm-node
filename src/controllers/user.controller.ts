@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
 import { getCustomRepository, getRepository } from "typeorm";
-import UserRepository from "../repositories/user.repositoty";
+import UserRepository from "../repositories/user.repository";
 import { createUser, updateUser } from "../services/user.service";
 
 export const signIn = async (req: Request, res: Response) => {

@@ -1,6 +1,6 @@
 import { Response, NextFunction } from "express";
 import { getCustomRepository } from "typeorm";
-import UserRepository from "../repositories/user.repositoty";
+import UserRepository from "../repositories/user.repository";
 
 export const isAuthorized = async (
   req: any,
